@@ -1,4 +1,4 @@
-const e = require("express")
+// const e = require("express")
 
 class ApiError extends Error {
     constructor(
@@ -11,7 +11,7 @@ class ApiError extends Error {
         this.statusCode = statusCode
         this.data = null
         this.message = message
-        this.sucess = false
+        this.success = false
         this.errors = errors
        
         if(stack){
